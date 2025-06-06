@@ -1,0 +1,7 @@
+# @vuegamut/vue-stately
+
+## 0.0.1
+
+### Patch Changes
+
+- 58e6184: First deployment.
