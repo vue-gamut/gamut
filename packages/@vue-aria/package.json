@@ -1,5 +1,5 @@
 {
-  "name": "@vuegamut/vue-aria",
+  "name": "vue-aria",
   "version": "0.0.0",
   "description": "Vue.js aria utilities and composables",
   "main": "dist/index.js",

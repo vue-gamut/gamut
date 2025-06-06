@@ -1,5 +1,5 @@
 {
-  "name": "@vuegamut/vue-stately",
+  "name": "vue-stately",
   "version": "0.0.0",
   "description": "Vue.js state management utilities and composables",
   "main": "dist/index.js",

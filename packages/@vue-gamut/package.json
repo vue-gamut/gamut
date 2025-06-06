@@ -1,5 +1,5 @@
 {
-  "name": "@vuegamut/vue-gamut",
+  "name": "vue-gamut",
   "version": "0.0.0",
   "description": "Vue.js component library and design system",
   "main": "dist/index.js",
