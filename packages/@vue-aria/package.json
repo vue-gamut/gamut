@@ -1,5 +1,5 @@
 {
-  "name": "vue-aria",
+  "name": "vue-accessibility",
   "version": "0.0.0",
   "description": "Vue.js aria utilities and composables",
   "main": "dist/index.js",
