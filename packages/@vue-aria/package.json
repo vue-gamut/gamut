@@ -1,0 +1,35 @@
+{
+  "name": "@vuegamut/vue-aria",
+  "version": "0.0.0",
+  "description": "Vue.js aria utilities and composables",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "echo 'Build script not implemented yet'",
+    "test": "echo 'Test script not implemented yet'"
+  },
+  "keywords": [
+    "vue",
+    "aria",
+    "accessibility",
+    "composables"
+  ],
+  "author": "",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vue-gamut/gamut.git",
+    "directory": "packages/@vue-aria"
+  },
+  "homepage": "https://github.com/vue-gamut/gamut#readme",
+  "peerDependencies": {
+    "vue": "^3.0.0"
+  },
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
+}

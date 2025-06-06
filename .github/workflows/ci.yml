@@ -1,0 +1,70 @@
+name: CI
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    name: Validate
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "18"
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 10
+
+      - name: Get pnpm store directory
+        shell: bash
+        run: |
+          echo "STORE_PATH=$(pnpm store path --silent)" >> $GITHUB_ENV
+
+      - name: Setup pnpm cache
+        uses: actions/cache@v4
+        with:
+          path: ${{ env.STORE_PATH }}
+          key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-pnpm-store-
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Build packages
+        run: pnpm build
+
+      - name: Run tests
+        run: pnpm test
+
+      - name: Check for changeset
+        if: github.event_name == 'pull_request'
+        run: |
+          if [ ! -d ".changeset" ]; then
+            echo "No .changeset directory found"
+            exit 1
+          fi
+
+          # Check if there are any changeset files (excluding README and config)
+          changeset_files=$(find .changeset -name "*.md" ! -name "README.md" | wc -l)
+
+          if [ "$changeset_files" -eq 0 ]; then
+            echo "❌ No changeset found. Please run 'pnpm changeset' to describe your changes."
+            echo "This helps maintain proper versioning and changelogs."
+            exit 1
+          else
+            echo "✅ Changeset found ($changeset_files changeset(s))"
+          fi

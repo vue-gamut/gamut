@@ -1,0 +1,39 @@
+{
+  "name": "@vuegamut/vue-gamut",
+  "version": "0.0.0",
+  "description": "Vue.js component library and design system",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "echo 'Build script not implemented yet'",
+    "test": "echo 'Test script not implemented yet'"
+  },
+  "keywords": [
+    "vue",
+    "components",
+    "design-system",
+    "ui"
+  ],
+  "author": "",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vue-gamut/gamut.git",
+    "directory": "packages/@vue-gamut"
+  },
+  "homepage": "https://github.com/vue-gamut/gamut#readme",
+  "peerDependencies": {
+    "vue": "^3.0.0"
+  },
+  "dependencies": {
+    "@vue-aria/core": "workspace:*",
+    "@vue-stately/core": "workspace:*"
+  },
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
+}
