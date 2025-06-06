@@ -55,7 +55,6 @@ jobs:
         id: changesets
         uses: changesets/action@v1
         with:
-          # This expects you to have a script called release which does a build
           publish: pnpm changeset:publish
           version: pnpm changeset:version
           commit: "chore: release packages"
