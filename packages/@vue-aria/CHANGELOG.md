@@ -4,6 +4,12 @@
 
 ### Patch Changes
 
+- df6fc3f: Fix package name
+
+## 0.0.1
+
+### Patch Changes
+
 - 636c900: Rename packages
 
 ## 0.0.1
