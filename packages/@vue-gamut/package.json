@@ -1,5 +1,5 @@
 {
-  "name": "@vuegamut/vue-gamut",
+  "name": "vue-gamut",
   "version": "0.0.1",
   "description": "Vue.js component library and design system",
   "main": "dist/index.js",
@@ -27,8 +27,8 @@
     "vue": "^3.0.0"
   },
   "dependencies": {
-    "@vue-aria/core": "workspace:*",
-    "@vue-stately/core": "workspace:*"
+    "vue-accessibility": "workspace:*",
+    "vue-reactively": "workspace:*"
   },
   "files": [
     "dist"
