@@ -12,7 +12,7 @@ importers:
         specifier: 2.29.4
         version: 2.29.4
 
-  packages/@vue-aria:
+  packages/@vue-accessibility:
     dependencies:
       vue:
         specifier: ^3.0.0
@@ -20,17 +20,17 @@ importers:
 
   packages/@vue-gamut:
     dependencies:
-      '@vue-aria/core':
-        specifier: workspace:*
-        version: link:../@vue-aria
-      '@vue-stately/core':
-        specifier: workspace:*
-        version: link:../@vue-stately
       vue:
         specifier: ^3.0.0
         version: 3.5.16
+      vue-accessibility:
+        specifier: workspace:*
+        version: link:../@vue-accessibility
+      vue-reactively:
+        specifier: workspace:*
+        version: link:../@vue-reactively
 
-  packages/@vue-stately:
+  packages/@vue-reactively:
     dependencies:
       vue:
         specifier: ^3.0.0
