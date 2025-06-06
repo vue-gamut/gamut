@@ -1,5 +1,11 @@
 # @vuegamut/vue-gamut
 
+## 0.0.1
+
+### Patch Changes
+
+- First deploy
+
 ## 0.0.2
 
 ### Patch Changes
