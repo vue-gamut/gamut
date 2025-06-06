@@ -1,6 +1,6 @@
 {
   "name": "vue-accessibility",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Vue.js aria utilities and composables",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
