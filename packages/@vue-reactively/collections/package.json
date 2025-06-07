@@ -1,0 +1,42 @@
+{
+  "name": "@vue-reactively/collections",
+  "version": "3.12.5",
+  "description": "Spectrum UI collection utilities for Vue",
+  "license": "Apache-2.0",
+  "main": "dist/main.js",
+  "module": "dist/module.js",
+  "exports": {
+    "source": "./src/index.ts",
+    "types": [
+      "./dist/types.d.ts",
+      "./src/index.ts"
+    ],
+    "import": "./dist/import.mjs",
+    "require": "./dist/main.js"
+  },
+  "types": "dist/types.d.ts",
+  "source": "src/index.ts",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "sideEffects": false,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/adobe/react-spectrum"
+  },
+  "dependencies": {
+    "@vue-types/collections": "^0.0.0",
+    "@vue-types/shared": "^0.0.0",
+    "@vue/composition-api": "^1.7.2"
+  },
+  "devDependencies": {
+    "vue": "^3.3.0"
+  },
+  "peerDependencies": {
+    "vue": "^2.6.0 || ^3.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

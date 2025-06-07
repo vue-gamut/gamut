@@ -20,7 +20,7 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/vue-gamut/gamut.git",
-    "directory": "packages/@vue-aria"
+    "directory": "packages/vue-aria"
   },
   "homepage": "https://github.com/vue-gamut/gamut#readme",
   "peerDependencies": {
