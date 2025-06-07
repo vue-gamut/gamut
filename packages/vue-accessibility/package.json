@@ -1,7 +1,7 @@
 {
-  "name": "vue-gamut",
+  "name": "vue-accessibility",
   "version": "0.0.1",
-  "description": "Vue.js component library and design system",
+  "description": "Vue.js aria utilities and composables",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
   "types": "dist/index.d.ts",
@@ -11,24 +11,20 @@
   },
   "keywords": [
     "vue",
-    "components",
-    "design-system",
-    "ui"
+    "aria",
+    "accessibility",
+    "composables"
   ],
   "author": "",
   "license": "ISC",
   "repository": {
     "type": "git",
     "url": "https://github.com/vue-gamut/gamut.git",
-    "directory": "packages/@vue-gamut"
+    "directory": "packages/vue-aria"
   },
   "homepage": "https://github.com/vue-gamut/gamut#readme",
   "peerDependencies": {
     "vue": "^3.0.0"
-  },
-  "dependencies": {
-    "vue-accessibility": "workspace:*",
-    "vue-reactively": "workspace:*"
   },
   "files": [
     "dist"
